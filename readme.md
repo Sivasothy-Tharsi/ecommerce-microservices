@@ -64,7 +64,7 @@ This project consists of four main components:
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| Java | 23 | Programming Language |
+| Java | 21 | Programming Language |
 | Spring Boot | 3.5.6 | Application Framework |
 | Spring Cloud Gateway | Latest | API Gateway |
 | Spring Cloud Netflix Eureka | Latest | Service Discovery |
@@ -76,7 +76,7 @@ This project consists of four main components:
 
 Before running this project, ensure you have:
 
-- **JDK 23** installed
+- **JDK 21** installed
 - **Maven 3.6+** installed
 - **MySQL 8.0+** running
 - **Postman** (optional, for testing APIs)
@@ -86,7 +86,7 @@ Before running this project, ensure you have:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Sivasothy-Tharsi/ecommerce-microservices.git>
 cd ecommerce-microservices
 ```
 
@@ -146,6 +146,17 @@ Start the services in the following order:
 All requests go through the API Gateway at `http://localhost:8080`
 
 ### Product Service
+
+#### Create Product
+```http
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Shoap",
+  "price": 120
+}
+```
 
 #### Get All Products
 ```http
