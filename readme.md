@@ -86,7 +86,7 @@ Before running this project, ensure you have:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <https://github.com/Sivasothy-Tharsi/ecommerce-microservices.git>
+git clone https://github.com/Sivasothy-Tharsi/ecommerce-microservices.git
 cd ecommerce-microservices
 ```
 
